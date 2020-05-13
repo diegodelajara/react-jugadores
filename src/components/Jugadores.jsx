@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 
 
 const Jugadores = ({jugadores, agregarTitular, agregarSuplente}) => (
-  <div className="contenedor-jugadores">
+  <div className="contenedor-equipo">
+    <div className="contenedor-jugadores">
     {
       jugadores.map(item => (
         <article className="jugador" key={item.id}>
@@ -21,6 +22,7 @@ const Jugadores = ({jugadores, agregarTitular, agregarSuplente}) => (
         </article>
       ))
     }
+    </div>
   </div>
 )
 // const mapStateToProps = state => ({})

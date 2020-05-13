@@ -2,10 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 const Suplentes = ({suplentes}) => (
-  <section>
+  <section className="contenedor-equipo">
     <h2>
       Suplentes
     </h2>
+    <div className="contenedor-jugadores">
     {
       suplentes.map(item => (
         <article className="jugador" key={item.id}>
@@ -13,12 +14,13 @@ const Suplentes = ({suplentes}) => (
             <img
               src={item.avatar}
               alt={item.nombre}
-            />
+              />
           </div>
           <div className="nombre">{item.nombre}</div>
         </article>
       ))
     }
+    </div>
   </section>
 )
 

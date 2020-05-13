@@ -2,10 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 const Titulares = ({titulares}) => (
-  <section>
+  <section className="contenedor-equipo">
     <h2>
       Titulares
     </h2>
+    <div className="contenedor-jugadores titulares">
     {
       titulares.map(item => (
         <article className="jugador" key={item.id}>
@@ -19,6 +20,7 @@ const Titulares = ({titulares}) => (
         </article>
       ))
     }
+    </div>
   </section>
 )
 

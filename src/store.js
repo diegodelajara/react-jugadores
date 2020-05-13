@@ -66,13 +66,6 @@ const reducerEntrenador = (state = initialState, action) => {
     default:
       break;
   }
-  if (action.type === 'AGREGAR_TITULAR') {
-    return {
-      ...state,
-      titulares: state.titulares.concat(action.jugador),
-      jugadores: state.jugadores.filter(j => j.id !== action.jugador.id)
-    }
-  }
   return state
 }
 

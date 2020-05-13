@@ -5,7 +5,7 @@ import Suplentes from './Suplentes.jsx'
 
 
 const EquipoSeleccionado = () => (
-  <div>
+  <div className="contenedor-equipo">
     <h1>EquipoSeleccionado</h1>
     <Titulares />
     <Suplentes />
